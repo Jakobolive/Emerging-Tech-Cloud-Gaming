@@ -1,8 +1,4 @@
-{#
-Author: Jakob Olive, 
-Date: 2024-11-08
-Base layout for website
-#}
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,11 +6,11 @@ Base layout for website
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css"> <!-- Bootstrap CSS From NPM Install -->
-    <title>{{ title }}</title>
+    <title>The Who?</title>
 </head>
 <body>
     <header>
-        {# Navbar that will link to all pages needed, Products, Producers, Locations, and the Home. #}
+        
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">Home</a>
@@ -47,9 +43,20 @@ Base layout for website
         </nav>
     </header>
     <main class="container my-4">
-        {{ content | safe }}
+        
+<h1>Our Locations Near You</h1>
+<p>Please, Check Out Our Locations That May Or May Not Be Anywhere Near Where You Acutally Are.</p>
+<nav aria-label="Page navigation">
+    
+</nav>
+<div class="container">
+</div>
+
+<nav aria-label="Page navigation">
+   
+</nav>
     </main>
-    {# Footer with copywrite & Name. #}
+    
     <footer class="text-center py-4">
         <p>&copy; 2024 Designed By NAMES</p>
     </footer>
