@@ -7,6 +7,7 @@ module.exports = function(eleventyConfig) {
     // Copy Bootstrap CSS and JS from node_modules to the output directory
     eleventyConfig.addPassthroughCopy("node_modules/bootstrap/dist/css/bootstrap.min.css");
     eleventyConfig.addPassthroughCopy("node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"); 
+    eleventyConfig.addPassthroughCopy("./src/images");
    
 // Defining and exporting the slugify function that will basically transform any string into something that can be used as a URL.
 const slugify = require("slugify");
