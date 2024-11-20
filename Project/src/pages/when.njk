@@ -8,70 +8,112 @@ Author: Jakob Olive,
 Date: 2024-11-08
 
 #}
-    <div class="container text-center">
-        <h1>Connectivity Timeline in Canada</h1>
-        <p>When Did the Problem Start, and What Upgrades Have Occurred?</p>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .timeline {
+    position: relative;
+    padding: 20px 0;
+    border-left: 2px solid #ccc;
+  }
+  .timeline-item {
+    position: relative;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -8px;
+    width: 16px;
+    height: 16px;
+    background: #007bff;
+    border: 2px solid white;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .timeline-item h5 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #007bff;
+  }
+  .timeline-item p {
+    margin: 5px 0 0;
+  }
+</style>
+
+<div class="container text-center">
+  <h1>Connectivity Timeline in Canada</h1>
+  <p>When Did the Problem Start, and What Upgrades Have Occurred?</p>
+</div>
+
+<main class="container my-5">
+  <section>
+    <h2 class="text-danger">When Did Connectivity Issues Begin?</h2>
+    <p>
+      Connectivity issues in Canada have roots in the country’s vast geography and the challenges 
+      of building infrastructure in rural and remote areas. Early internet adoption in urban centers 
+      during the 1990s left rural areas lagging behind, creating a digital divide that persists today.
+    </p>
+  </section>
+
+  <section class="mt-5">
+    <h3>Timeline of Technological Upgrades</h3>
+    <div class="timeline">
+      <!-- Timeline Item -->
+      <div class="timeline-item">
+        <h5>1995: Early Internet Rollout</h5>
+        <p>
+          Canada begins widespread adoption of dial-up internet in urban areas, but rural regions remain underserved.
+        </p>
+      </div>
+      <!-- Timeline Item -->
+      <div class="timeline-item">
+        <h5>2000s: DSL and Cable Internet</h5>
+        <p>
+          Faster internet technologies like DSL and cable become common in cities, 
+          but rural areas still depend on dial-up or costly satellite connections.
+        </p>
+      </div>
+      <!-- Timeline Item -->
+      <div class="timeline-item">
+        <h5>2010: Broadband Expansion</h5>
+        <p>
+          The Canadian government launches initiatives to improve broadband access, 
+          including subsidies for rural infrastructure projects.
+        </p>
+      </div>
+      <!-- Timeline Item -->
+      <div class="timeline-item">
+        <h5>2015: 4G LTE Network Rollout</h5>
+        <p>
+          Cellular providers expand 4G LTE coverage across major population centers, 
+          but rural areas still experience patchy service.
+        </p>
+      </div>
+      <!-- Timeline Item -->
+      <div class="timeline-item">
+        <h5>2020: 5G Rollout Begins</h5>
+        <p>
+          Canada starts deploying 5G networks in urban areas, promising faster speeds 
+          and lower latency, but rural adoption remains slow.
+        </p>
+      </div>
+      <!-- Timeline Item -->
+      <div class="timeline-item">
+        <h5>2022: High-Speed Internet Access Program</h5>
+        <p>
+          The federal government announces significant funding to connect 98% of Canadians 
+          to high-speed internet by 2026.
+        </p>
+      </div>
     </div>
-
-    <main class="container my-5">
-        <section>
-            <h2 class="text-danger">When Did Connectivity Issues Begin?</h2>
-            <p>
-                Connectivity issues in Canada have roots in the country’s vast geography and the challenges 
-                of building infrastructure in rural and remote areas. Early internet adoption in urban centers 
-                during the 1990s left rural areas lagging behind, creating a digital divide that persists today.
-            </p>
-        </section>
-
-        <section class="mt-5">
-            <h3>Timeline of Technological Upgrades</h3>
-            <div class="timeline">
-                <!-- Timeline Item -->
-                <div class="timeline-item">
-                    <h5>1995: Early Internet Rollout</h5>
-                    <p>
-                        Canada begins widespread adoption of dial-up internet in urban areas, but rural regions remain underserved.
-                    </p>
-                </div>
-                <!-- Timeline Item -->
-                <div class="timeline-item">
-                    <h5>2000s: DSL and Cable Internet</h5>
-                    <p>
-                        Faster internet technologies like DSL and cable become common in cities, 
-                        but rural areas still depend on dial-up or costly satellite connections.
-                    </p>
-                </div>
-                <!-- Timeline Item -->
-                <div class="timeline-item">
-                    <h5>2010: Broadband Expansion</h5>
-                    <p>
-                        The Canadian government launches initiatives to improve broadband access, 
-                        including subsidies for rural infrastructure projects.
-                    </p>
-                </div>
-                <!-- Timeline Item -->
-                <div class="timeline-item">
-                    <h5>2015: 4G LTE Network Rollout</h5>
-                    <p>
-                        Cellular providers expand 4G LTE coverage across major population centers, 
-                        but rural areas still experience patchy service.
-                    </p>
-                </div>
-                <!-- Timeline Item -->
-                <div class="timeline-item">
-                    <h5>2020: 5G Rollout Begins</h5>
-                    <p>
-                        Canada starts deploying 5G networks in urban areas, promising faster speeds 
-                        and lower latency, but rural adoption remains slow.
-                    </p>
-                </div>
-                <!-- Timeline Item -->
-                <div class="timeline-item">
-                    <h5>2022: High-Speed Internet Access Program</h5>
-                    <p>
-                        The federal government announces significant funding to connect 98% of Canadians 
-                        to high-speed internet by 2026.
-                    </p>
-                </div>
-            </div>
-        </section>
+  </section>
+</main>
